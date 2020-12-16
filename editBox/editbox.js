@@ -1,10 +1,14 @@
 Ext.onReady(function(){
 
-    Ext.create('Ext.Viewport',{
-        items:[{
-            layout:'fit',
-            region:'center',
-            items:[{fieldLabel:'test',type:'textfield'}]
+    Ext.create('Ext.Viewport', {
+        
+        items: [{
+            xtype: 'textfield',
+            fieldLabel: 'Name',
+            allowBlank: false 
+        }, {
+            xtype: 'textfield',
+            fieldLabel: 'Email Address',
         }]
-    })
+    });
 })
